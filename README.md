@@ -11,6 +11,8 @@ Get GPS Location, Read SMS, Take Photo's and Read the Call Logs of an Android De
 ## Server Setup   
 - Grab the PHP Frontend Files
 - Upload to a hosting provider, ByteHost or 000WebHost for free examples
+- Get your Firebase Server Key
+- Enter into command.php
 
 
 ## Launching Application    
