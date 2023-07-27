@@ -29,7 +29,7 @@ function sendPush($token, $message) {
     $fields = json_encode ( $fields );
 
     $headers = array (
-            'Authorization: key=AAAA8KuzraU:APA91bFW9s6UvGynpjYKiAQiOdIREjK83xKn9sYHA53BXO5feWQY_U5sIZIYesGSVHLJw8m-fEuQU0NH-2EFlnhrz1mTJzLGcG_90bPNMAwFe6dZd8mBUC2tgLy3t8bVdDDTLr1m3P7B',
+            'Authorization: key=YOUR FIREBASE SERVER KEY',
             'Content-Type: application/json'
     );
 
