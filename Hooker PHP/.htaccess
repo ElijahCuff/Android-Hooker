@@ -1,0 +1,31 @@
+php_value display_errors 1
+php_value date.timezone Australia/Sydney
+ErrorDocument 400 index.php
+ErrorDocument 401 index.php
+ErrorDocument 403 index.php
+ErrorDocument 404 index.php
+ErrorDocument 503 index.php
+#
+# START MOD REWRITE
+# 
+RewriteBase /
+#
+# CHECK FOR 404
+#
+RewriteEngine On
+#
+# MAKE IT LOOK GOOD
+#
+# 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)$ $1.html [L]
+#
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [L]
+#
+DirectoryIndex index.php
+Options -Indexes
+#
+
+
